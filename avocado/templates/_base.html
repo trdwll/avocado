@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>{{ BLOG_TITLE }} &bull; {% block title %}{% endblock %}</title>
+
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/clean-blog.min.css' %}">
+
+		<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+			<div class="container">
+				<!-- <a class="navbar-brand" href="{% url 'home' %}">{{ BLOG_TITLE }}</a> -->
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fa fa-bars"></i></button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						{% include 'navigation.html' %}
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header -->	
+		{% block header %}
+		<header class="masthead">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-10 mx-auto">
+						<div class="site-heading">
+							<h1>{{ BLOG_TITLE }}</h1>
+							<span class="subheading">{{ BLOG_DESC }}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		{% endblock %}
+
+		<!-- Content -->
+		{% block content %}{% endblock %}
+		<hr />
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-10 mx-auto">
+						<ul class="list-inline text-center">
+							{% include 'footer.html' %}
+						</ul>
+						<p class="copyright text-muted">Powered by <a href="{% static 'copyright.txt' %}">avocado</a>. - Design by <a href="https://startbootstrap.com/template-overviews/clean-blog/">StartBootstrap</a>.
+						{% if COPYRIGHT %}<br />{{ COPYRIGHT|safe }}{% endif %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- js -->
+		<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+	</body>
+</html>

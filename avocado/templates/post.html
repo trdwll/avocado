@@ -1,0 +1,34 @@
+{% extends '_base.html' %}
+{% load markup_tags %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block header %}
+<header class="masthead" {% if header_image %}style="background-image: url({{ header_image }}) !important;"{% endif %}>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="site-heading">
+					<h1>{{ post.title }}</h1>
+					<span class="subheading">{{ post.sub_heading }}</span>
+					<span class="meta">
+						Posted by {{ post.author }} on {{ post.created }}
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+{% endblock %}
+
+{% block content %}
+<article>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				{{ post.body|apply_markup:"markdown" }}
+			</div>
+		</div>
+	</div>
+</article>
+{% endblock %}

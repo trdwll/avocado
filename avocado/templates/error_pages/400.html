@@ -1,0 +1,33 @@
+{% extends '_base.html' %}
+
+{% block title %}Bad Request{% endblock %}
+
+{% block header %}
+<header class="masthead" style="background-image: none !important;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="site-heading">
+					<h1>400</h1>
+					<span class="subheading">The request you sent was bad.</span>
+					<span class="meta">
+						Not sure what to tell you, - try again?
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+{% endblock %}
+
+{% block content %}
+<article>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				Refresh the page and see if that works.
+			</div>
+		</div>
+	</div>
+</article>
+{% endblock %}

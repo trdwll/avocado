@@ -1,0 +1,40 @@
+{% extends '_base.html' %}
+
+{% block title %}Categories{% endblock %}
+
+{% block header %}
+<header class="masthead">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="site-heading">
+					<h1>Categories</h1>
+					<span class="subheading">Posts that were posted under {{ category }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-10 mx-auto">
+			{% for post in posts %}
+			<div class="post-preview">
+				<a href="{{ post.get_absolute_url }}" title="{{ post.title }}">
+					<h2 class="post-title">{{ post.title }}</h2>
+				</a>
+				<span class="meta">
+					Posted by {{ post.author }} on <em>{{ post.created }}</em>
+				</span>
+			</div>
+			{% endfor %}
+
+			<!-- Pagination -->
+			{% include 'pagination.html' %}
+		</div>
+	</div>
+</div>
+{% endblock %}
