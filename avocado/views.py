@@ -39,7 +39,8 @@ class CategoryList(ListView):
     paginate_by = 20
     
     def get_queryset(self):
-        return get_list_or_404(Post, category__icontains=self.kwargs['category'])
+        return get_list_or_404(Post.objects.order_by('-id'), 
+            category__icontains=self.kwargs['category'])
 
 
 """
