@@ -1,7 +1,7 @@
 {% extends '_base.html' %}
 {% load markup_tags %}
 
-{% block title %}{{ post.title }}{% endblock %}
+{% block title %}&bull; {{ post.title }}{% endblock %}
 
 {% block header %}
 <header class="masthead" {% if header_image %}style="background-image: url({{ header_image }}) !important;"{% endif %}>
