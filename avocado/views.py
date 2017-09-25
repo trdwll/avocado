@@ -22,7 +22,7 @@ class ViewPost(View):
     template_name = 'post.html'
 
     def get(self, request, year, month, slug):
-        post = get_object_or_404(Post, created__year=year, created__month=month, slug=slug)
+        post = get_object_or_404(Post, created__year=year, created__month=month, slug=slug, publish=True)
 
         if post.header_image:
             header_image = settings.MEDIA_URL+os.path.basename(post.header_image.url)
