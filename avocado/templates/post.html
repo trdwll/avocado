@@ -4,6 +4,7 @@
 {% block title %}{{ post.title }}{% endblock %}
 
 {% block header %}
+{% if posts.publish %}
 <header class="masthead" {% if header_image %}style="background-image: url({{ header_image }}) !important;"{% endif %}>
 	<div class="container">
 		<div class="row">
@@ -19,9 +20,11 @@
 		</div>
 	</div>
 </header>
+{% endif %}
 {% endblock %}
 
 {% block content %}
+{% if posts.publish %}
 <article>
 	<div class="container">
 		<div class="row">
@@ -31,4 +34,5 @@
 		</div>
 	</div>
 </article>
+{% endif %}
 {% endblock %}
