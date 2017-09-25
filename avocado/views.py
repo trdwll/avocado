@@ -15,7 +15,7 @@ class BlogHome(ListView):
     template_name = 'index.html'
     context_object_name = 'posts'
     paginate_by = 5
-    queryset = Post.objects.all().order_by('-id')
+    queryset = Post.objects.all().order_by('-id').filter(publish=True)
 
 
 class ViewPost(View):
@@ -25,9 +25,8 @@ class ViewPost(View):
         post = get_object_or_404(Post, created__year=year, created__month=month, slug=slug, publish=True)
 
         if post.header_image:
-            header_image = settings.MEDIA_URL+os.path.basename(post.header_image.url)
-
-            return render(request, self.template_name, {'post': post, 'header_image': header_image})
+            return render(request, self.template_name, {'post': post, 
+                'header_image': settings.MEDIA_URL+os.path.basename(post.header_image.url)})
     
         return render(request, self.template_name, {'post': post})
 
@@ -40,7 +39,7 @@ class CategoryList(ListView):
     
     def get_queryset(self):
         return get_list_or_404(Post.objects.order_by('-id'), 
-            category__icontains=self.kwargs['category'])
+            category__icontains=self.kwargs['category'], publish=True)
 
 
 """
