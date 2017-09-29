@@ -1,7 +1,3 @@
 Django
 django-markup
-textile
-smartypants
-docutils
 markdown
-python-creole
