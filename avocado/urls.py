@@ -27,12 +27,10 @@ handler500 = 'avocado.views.handler500'
 
 urlpatterns = [
     url(r'^$', views.BlogHome.as_view(), name='home'),
-    url(r'^/page/<?P<page>\d+)/$', views.BlogHome.as_view(), name='home_paginated'),
-    url(r'^(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<slug>[^\.]+).html', views.ViewPost.as_view(), 
-        name='view_post'),
+    url(r'^page/(?P<page>\d+)$', views.BlogHome.as_view(), name='home_paginated'),
+    url(r'^(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<slug>[^\.]+).html', views.ViewPost.as_view(), name='view_post'),
     url(r'^category/(?P<category>[a-zA-Z0-9]+)', views.CategoryList.as_view(), name='category'),
-    url(r'^category/(?P<category>[a-zA-Z0-9]+)/page/(?P<page>\d+)/$', views.CategoryList.as_view(), 
-        name='category_paginated'),
+    url(r'^category/(?P<category>[a-zA-Z0-9]/page/<page>\d+)$', views.CategoryList.as_view(), name='category_paginated'),
     url(r'^admin/', admin.site.urls, name='admin'),
 ]
 
