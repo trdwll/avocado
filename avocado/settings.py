@@ -126,7 +126,7 @@ MEDIA_URL = '/img/'
 
 BLOG_TITLE = 'BLOG TITLE'
 BLOG_DESC = 'BLOG DESCRIPTION'
-COPYRIGHT = 'Copyright &copy; 2017'
+COPYRIGHT = 'Copyright &copy; 2017 EDIT_ME'
 
 # Social
 TWTTR_LNK = 'EDIT_ME'
