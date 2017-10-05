@@ -5,7 +5,8 @@ __It's a simple blog system built with Django.__
 [![Issues](https://img.shields.io/github/issues-raw/trdwll/avocado.svg)](https://github.com/trdwll/avocado/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr-raw/trdwll/avocado.svg)](https://github.com/trdwll/avocado/pulls)<br>
 [![Contributors](https://img.shields.io/github/contributors/trdwll/avocado.svg)](https://github.com/rivermont/avocado/graphs/contributors)
-![Forks](https://img.shields.io/github/forks/trdwll/avocado.svg?style=social&label=Forks)
+[![Forks](https://img.shields.io/github/forks/trdwll/avocado.svg?style=social&label=Forks)](https://github.com/trdwll/avocado/network)
+[![Stars](https://img.shields.io/github/stars/trdwll/avocado.svg?style=social&label=Stars)](https://github.com/trdwll/avocado/stargazers)
 
 # Contents
 
