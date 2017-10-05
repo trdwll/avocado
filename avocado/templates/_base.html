@@ -56,7 +56,9 @@
 						<ul class="list-inline text-center">
 							{% include 'footer.html' %}
 						</ul>
-						<p class="copyright text-muted">Powered by <a href="{% static 'copyright.txt' %}">avocado</a>. - Design by <a href="https://startbootstrap.com/template-overviews/clean-blog/">StartBootstrap</a>.
+						<p class="copyright text-muted">
+							<a class="logo" href="{% static 'copyright.txt' %}" title="avocado"></a><br />
+							Design by <a href="https://startbootstrap.com/template-overviews/clean-blog/">StartBootstrap</a>.
 						{% if COPYRIGHT %}<br />{{ COPYRIGHT|safe }}{% endif %}
 						</p>
 					</div>
