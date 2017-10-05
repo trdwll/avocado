@@ -1,8 +1,9 @@
 # avocado
-__ It's a simple blog system built with Django__
+__It's a simple blog system built with Django__
 
 # Set up process 
 Well, edit the __avocado/templates/*__ if you don't want to use the default theme.
+
 Open __avocado/settings.py__ and edit:
 - _SECRET_KEY_ to something random
 - _BLOG_TITLE_ to whatever you want to call your blog
@@ -18,9 +19,9 @@ Note :- Personally I just throw it in a screen session and forget about it - the
 - Built in Python and with Django
 - Lightweight
 
-# Plsease Note
+# Please Note
 - Not in PHP
 - Not a team of 100,000 devs so the code is rather clean and simple
 
 # How to contribute 
-Well, sure - see [TODO.md](https://github.com/trdwll/avocado/blob/master/TODO.md) to see current tasks. I don't think it's necessary for me to make guidelines since it's a small app. Just if you contribute make sure it's ok code and not pure shit - like code you wrote when you first started programming. ;)
+Well, sure - see [TODO.md](https://github.com/trdwll/avocado/blob/master/TODO.md) to see current tasks. I don't think it's necessary to make a full code of conduct on style of code etc just write good clean code. See [CONTRIBUTE.md(https://github.com/trdwll/avocado/blob/master/CONTRIBUTE.md)

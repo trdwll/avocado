@@ -124,6 +124,7 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 MEDIA_ROOT = os.path.join(PROJECT_DIR, 'img')
 MEDIA_URL = '/img/'
 
+# Blog Info
 BLOG_TITLE = 'BLOG TITLE'
 BLOG_DESC = 'BLOG DESCRIPTION'
 COPYRIGHT = 'Copyright &copy; 2017 EDIT_ME'
@@ -131,5 +132,5 @@ COPYRIGHT = 'Copyright &copy; 2017 EDIT_ME'
 # Social
 TWTTR_LNK = 'EDIT_ME'
 GITHUB_LNK = 'EDIT_ME'
-FB_LNK = ''
+FB_LNK = 'EDIT_ME'
 REDDIT_LNK = 'EDIT_ME'
