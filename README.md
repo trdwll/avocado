@@ -9,6 +9,10 @@ Open __avocado/settings.py__ and edit:
 - _BLOG_TITLE_ to whatever you want to call your blog
 - _BLOG_DESC_ to whatever you want to describe your blog with
 - _COPYRIGHT_ to the current year and your name or keep it blank to remove it
+- _TWTTR_LNK_ to whatever your username is
+- _GITHUB_LNK_ to whatever your username is
+- _FB_LNK_ to whatever your username is
+- _REDDIT_LNK_ to whatever your username is
 
 Once you're done with the tasks above you're going to want to go read how to put a Django project in production.
 Note :- Personally I just throw it in a screen session and forget about it - there's some other ways, but that's the quickest I've found. :)
