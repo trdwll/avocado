@@ -33,7 +33,7 @@
 			{% endfor %}
 
 			<!-- Pagination -->
-			{% include 'pagination.html' %}
+			{% include 'pagination.html' with base_path='category/'|add:view.kwargs.category|add:'/' %}
 		</div>
 	</div>
 </div>
