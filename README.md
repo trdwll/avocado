@@ -1,8 +1,6 @@
 # avocado
 __It's a simple blog system built with Django.__
 
-![Avocado](https://thumbs.gfycat.com/FreshLimpingLeveret-size_restricted.gif)
-
 [![License](https://img.shields.io/github/license/trdwll/avocado.svg)](https://github.com/trdwll/avocado/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues-raw/trdwll/avocado.svg)](https://github.com/trdwll/avocado/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr-raw/trdwll/avocado.svg)](https://github.com/trdwll/avocado/pulls)<br>
@@ -48,5 +46,8 @@ Note :- Personally I just throw it in a screen session and forget about it - the
 
 # How to Contribute 
 Well, sure - see [TODO.md](https://github.com/trdwll/avocado/blob/master/TODO.md) to see current tasks. I don't think it's necessary to make a full code of conduct on style of code etc just write good clean code. See [CONTRIBUTE.md](https://github.com/trdwll/avocado/blob/master/CONTRIBUTE.md)
+
+# Screenshots
+![Avocado](https://thumbs.gfycat.com/FreshLimpingLeveret-size_restricted.gif)
 
 ***
