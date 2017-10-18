@@ -125,8 +125,8 @@ MEDIA_ROOT = os.path.join(PROJECT_DIR, 'img')
 MEDIA_URL = '/img/'
 
 # Blog Info
-BLOG_TITLE = 'BLOG TITLE'
-BLOG_DESC = 'BLOG DESCRIPTION'
+BLOG_TITLE = '<Blog title>'
+BLOG_DESC = '<Blog Description>'
 COPYRIGHT = 'Copyright &copy; <Current Year> <Your Name>'
 
 # Social

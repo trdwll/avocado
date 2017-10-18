@@ -38,14 +38,14 @@ __It's a simple blog system built with Django.__
 If you would like to change the default theme, edit the files in `avocado/templates/`.
 
 Open `avocado/settings.py` and edit the following variables:
-- `SECRET`KEY` to something random. Keep it secret!
-- `BLOG_TITLE` to whatever you want to call your blog.
-- `BLOG_DESC` to a short description of your blog.
-- `COPYRIGHT` to the current year and your name. Keep blank to remove the copyright.
-- `TWTTR_LNK` to whatever your Twitter username is.
-- `GITHUB_LNK` to whatever your GitHub username is.
-- `FB_LNK` to whatever your Facebook username is.
-- `REDDIT_LNK` to whatever your Reddit username is.
+- [`SECRET`KEY`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L22) to something random. Keep it secret!
+- [`BLOG_TITLE`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L128) to whatever you want to call your blog.
+- [`BLOG_DESC`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L129) to a short description of your blog.
+- [`COPYRIGHT`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L130) to the current year and your name. Keep blank to remove the copyright.
+- [`TWTTR_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L133) to whatever your Twitter username is.
+- [`GITHUB_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L134) to whatever your GitHub username is.
+- [`FB_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L135) to whatever your Facebook username is.
+- [`REDDIT_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L136) to whatever your Reddit username is.
 
 Once you're done with the tasks above you're going to want to go read how to put a Django project in production.
 Note :- Personally I just throw it in a screen session and forget about it - there's some other ways, but that's the quickest I've found. :)
@@ -57,8 +57,8 @@ Note :- Personally I just throw it in a screen session and forget about it - the
 
 
 # How to Contribute 
-If you would like to contribute to Avocado, see [TODO.md](https://github.com/trdwll/avocado/blob/master/TODO.md) for a list of the current tasks.
+If you would like to contribute to Avocado, see [`TODO.md`](https://github.com/trdwll/avocado/blob/master/TODO.md) for a list of the current tasks.
 I don't think it's necessary to make a full code of conduct on style of code etc; just write good clean code.
-See [CONTRIBUTE.md](https://github.com/trdwll/avocado/blob/master/CONTRIBUTE.md) for some basic guidelines.
+See [`CONTRIBUTE.md`](https://github.com/trdwll/avocado/blob/master/CONTRIBUTE.md) for some basic guidelines.
 
 ***
