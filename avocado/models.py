@@ -3,6 +3,7 @@ from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 from django.conf import settings
 
+
 class Post(models.Model):
     title = models.CharField(max_length=128, unique=True)
     slug = models.SlugField(max_length=128, unique=True)
@@ -26,14 +27,12 @@ class Post(models.Model):
 
         return reverse('view_post', kwargs=kwargs)
 
-
     def get_category_url(self):
         kwargs = {
             'category': self.category
         }
 
         return reverse('category', kwargs=kwargs)
-
 
     class Meta:
         verbose_name = 'Blog Post'

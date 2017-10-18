@@ -1,1 +1,3 @@
-- ~~Convert pagination urls to /_int_/ rather than ?page=_int_~~
+# TODO
+
+Nothing to do so far! If you have a feature suggestion, raise an Issue on GitHub.

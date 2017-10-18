@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'EDIT_ME'
+SECRET_KEY = '<RANDOM>'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -125,12 +125,12 @@ MEDIA_ROOT = os.path.join(PROJECT_DIR, 'img')
 MEDIA_URL = '/img/'
 
 # Blog Info
-BLOG_TITLE = 'BLOG TITLE'
-BLOG_DESC = 'BLOG DESCRIPTION'
-COPYRIGHT = 'Copyright &copy; 2017 EDIT_ME'
+BLOG_TITLE = '<Blog title>'
+BLOG_DESC = '<Blog Description>'
+COPYRIGHT = 'Copyright &copy; <Current Year> <Your Name>'
 
 # Social
-TWTTR_LNK = 'EDIT_ME'
-GITHUB_LNK = 'EDIT_ME'
-FB_LNK = 'EDIT_ME'
-REDDIT_LNK = 'EDIT_ME'
+TWTTR_LNK = '<Twitter Profile>'
+GITHUB_LNK = '<GitHub Profile>'
+FB_LNK = '<Facebook Profile>'
+REDDIT_LNK = '<reddit Profile>'
