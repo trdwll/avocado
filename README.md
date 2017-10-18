@@ -1,6 +1,8 @@
 # avocado
 __It's a simple blog system built with Django.__
 
+![Avocado](https://raw.githubusercontent.com/trdwll/avocado/master/avocado/static/img/logo.png)
+
 [![License](https://img.shields.io/github/license/trdwll/avocado.svg?style=flat-square)](https://github.com/trdwll/avocado/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues-raw/trdwll/avocado.svg?style=flat-square)](https://github.com/trdwll/avocado/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr-raw/trdwll/avocado.svg?style=flat-square)](https://github.com/trdwll/avocado/pulls)
