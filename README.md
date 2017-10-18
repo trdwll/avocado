@@ -38,7 +38,7 @@ __It's a simple blog system built with Django.__
 If you would like to change the default theme, edit the files in `avocado/templates/`.
 
 Open `avocado/settings.py` and edit the following variables:
-- [`SECRET`KEY`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L22) to something random. Keep it secret!
+- [`SECRET_KEY`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L22) to something random. Keep it secret!
 - [`BLOG_TITLE`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L128) to whatever you want to call your blog.
 - [`BLOG_DESC`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L129) to a short description of your blog.
 - [`COPYRIGHT`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L130) to the current year and your name. Keep blank to remove the copyright.
