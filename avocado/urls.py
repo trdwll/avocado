@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
@@ -26,13 +26,12 @@ handler404 = 'avocado.views.handler404'
 handler500 = 'avocado.views.handler500'
 
 urlpatterns = [
-    url(r'^$', views.BlogHome.as_view(), name='home'),
-    url(r'^page/(?P<page>\d+)/?$', views.BlogHome.as_view(), name='home_paginated'),
-    url(r'^(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<slug>[^\.]+).html', views.ViewPost.as_view(), name='view_post'),
-    url(r'^category/(?P<category>[a-zA-Z0-9]+)/?$', views.CategoryList.as_view(), name='category'),
-    url(r'^category/(?P<category>[a-zA-Z0-9]+)/page/(?P<page>\d+)/?$',
-        views.CategoryList.as_view(), name='category_paginated'),
-    url(r'^admin/', admin.site.urls, name='admin'),
+    path('', views.BlogHome.as_view(), name='home'),
+    path('page/<int:page>/', views.BlogHome.as_view(), name='home_paginated'),
+    path('<int:year>/<int:month>/<slug>.html', views.ViewPost.as_view(), name='view_post'),
+    path('category/<category>/', views.CategoryList.as_view(), name='category'),
+    path('category/<category>/page/<int:page>/', views.CategoryList.as_view(), name='category_paginated'),
+    path('admin/', admin.site.urls, name='admin'),
 ]
 
 if settings.DEBUG:
