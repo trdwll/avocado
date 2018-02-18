@@ -38,14 +38,14 @@ __It's a simple blog system built with Django.__
 If you would like to change the default theme, edit the files in `avocado/templates/`.
 
 Open `avocado/settings.py` and edit the following variables:
-- [`SECRET_KEY`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L22) to something random. Keep it secret!
-- [`BLOG_TITLE`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L128) to whatever you want to call your blog.
-- [`BLOG_DESC`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L129) to a short description of your blog.
-- [`COPYRIGHT`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L130) to the current year and your name. Keep blank to remove the copyright.
-- [`TWTTR_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L133) to whatever your Twitter username is.
-- [`GITHUB_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L134) to whatever your GitHub username is.
-- [`FB_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L135) to whatever your Facebook username is.
-- [`REDDIT_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L136) to whatever your Reddit username is.
+- [`SECRET_KEY`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L14) to something random. Keep it secret!
+- [`BLOG_TITLE`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L120) to whatever you want to call your blog.
+- [`BLOG_DESC`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L121) to a short description of your blog.
+- [`COPYRIGHT`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L122) to the current year and your name. Keep blank to remove the copyright.
+- [`TWTTR_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L125) to whatever your Twitter username is.
+- [`GITHUB_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L126) to whatever your GitHub username is.
+- [`FB_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L127) to whatever your Facebook username is.
+- [`REDDIT_LNK`](https://github.com/trdwll/avocado/blob/master/avocado/settings.py#L128) to whatever your Reddit username is.
 
 Once you're done with the tasks above you're going to want to go read how to put a Django project in production.
 Note :- Personally I just throw it in a screen session and forget about it - there's some other ways, but that's the quickest I've found. :)
