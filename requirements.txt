@@ -1,4 +1,6 @@
 Django
-django-markup
+django-taggit
+django-ckeditor
+django-htmlmin
 markdown
 Pillow
