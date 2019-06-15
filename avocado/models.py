@@ -3,6 +3,7 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from django.conf import settings
 
+from ckeditor_uploader.fields import RichTextUploadingField
 
 class Post(models.Model):
     title = models.CharField(max_length=128, unique=True)
@@ -10,7 +11,7 @@ class Post(models.Model):
     sub_heading = models.CharField(max_length=128, blank=True)
     header_image = models.ImageField(blank=True)
     category = models.SlugField(max_length=32, default='Untitled') 
-    body = models.TextField()
+    body = RichTextUploadingField()
     publish = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=128)

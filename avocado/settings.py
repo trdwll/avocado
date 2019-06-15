@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +128,14 @@ TWTTR_LNK = '<Twitter Profile>'
 GITHUB_LNK = '<GitHub Profile>'
 FB_LNK = '<Facebook Profile>'
 REDDIT_LNK = '<reddit Profile>'
+
+
+HTML_MINIFY = True
+
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_THUMBNAIL_SIZE = (300, 300)
+CKEDITOR_IMAGE_QUALITY = 40
+CKEDITOR_BROWSE_SHOW_DIRS = True
+CKEDITOR_ALLOW_NONIMAGE_FILES = True
